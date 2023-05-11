@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0%;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        header::before{
+            background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Fshots%2F20093666-FIFA-World-Cup-2022-Leo-Messi-FanArt&psig=AOvVaw1QNZQUWnHUfvIeTiBOSWrX&ust=1681811457060000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCPDy-JDSsP4CFQAAAAAdAAAAABAE") no-repeat center center/cover;
+            content:"" ;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            opacity: 0.5;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+
+            
+        }
+
+
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+
+
+        }
+        li{
+            list-style: none;
+            padding: 23px 20px;
+
+        }
+        section{
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 3px 20px;
+            align-items: center;
+            border: 2px solid rgb(8, 2, 2);
+            height: 344px;
+            justify-content: center;
+        }
+        h1{
+            font-size: 3rem;
+
+        }
+        p{
+            text-align: center;
+        }
+
+        /*section::before{
+            content: "this is a content";
+        }*/
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">ContactUS</li>
+            </ul>
+        </nav>
+       
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo cupiditate animi dolorum est quam quae voluptatum corrupti blanditiis quidem placeat!</p>
+    </section>
+    <hr>
+    
+</body>
+</html>

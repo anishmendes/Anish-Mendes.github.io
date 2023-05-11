@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            margin: 34px;
+            width: 233px;
+            display: block;
+
+
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]{
+            padding: 23px;
+            border: 2px solid red;
+
+        }
+        a[target]{
+            font-size: 44px;
+            color: violet;
+        }
+        a[target="_self"]{
+            font-size: 44px;
+            color: rgb(46, 147, 15);
+        }
+        li:nth-child(3){
+            color: blue;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> <a href="http://google.com" target="_blank">Go to GOOGLE</a></h1>
+        <h1> <a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+        <form action ="" class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" value="Submit">
+            
+
+        </form>
+        <uL>
+            <li class="item" id="item-1">item-1</li>
+            <li class="item" id="item-2">item-2</li>
+            <li class="item" id="item-3">item-3</li>
+            <li class="item" id="item-4">item-4</li>
+            <li class="item" id="item-5">item-5</li>
+        </uL>
+    </div>
+    
+</body>
+</html>
